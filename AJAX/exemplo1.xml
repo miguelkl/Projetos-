@@ -1,0 +1,18 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<!--Éo Ínpera? hell nah !!! -->
+<Formando ano = "2024">
+    <Curso>
+        <SI>
+            <Aluno mat = "0002" dataEntrada = "07-08-2022">
+                <nome>Alexandre Dumas</nome>
+                <rg>24.346.567-9</rg>
+                <cpf>075.376.444-09</cpf>
+            </Aluno>
+             <Aluno mat = "0006" dataEntrada = "10-08-2022">
+                <nome>Juliana Dantas</nome>
+                <rg>24.555.567-9</rg>
+                <cpf>045.376.444-09</cpf>
+            </Aluno>
+        </SI>
+    </Curso>
+</Formando>

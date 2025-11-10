@@ -1,0 +1,27 @@
+<h3>Formulário Reativo</h3>
+
+<form [formGroup]="form" (ngSubmit)="enviar()" >
+    <label for="nome">Nome:</label>
+    <input type="text" formControlName="nome" id="nome" name="nome">
+    <span *ngIf="form.get('nome')?.invalid &&
+                form.get('nome')?.touched
+    ">Nome é obrigatório.</span>
+    <br>
+
+    <label for="email">Email:</label>
+    <input type="email" formControlName="email" id="email" name="email">
+    <span *ngIf="form.get('email')?.invalid &&
+                form.get('email')?.touched
+    ">Email é inválido.</span>
+    <br>
+
+    <label for="idade">Idade:</label>
+    <input type="number" formControlName="idade" id="idade" name="idade">
+    <span *ngIf="form.get('idade')?.invalid &&
+                form.get('idade')?.touched
+    ">Idade deve ser maior ou igual a 0.</span>
+    <br>
+    <button type="submit">Enviar</button>
+
+
+</form>

@@ -1,0 +1,29 @@
+h1 {
+    color: rgb(38, 0, 141);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 35px;
+    font-style: italic;
+    font-weight: bold;
+
+    text-align: center;
+
+    border-color: red ;
+    border-style: solid ;
+    border-width: 2px;
+    border-radius: 10px;
+    
+    background-color: aqua;
+}
+p {
+    background-color: grey;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+body {
+    /* background-color: beige */
+
+    background-image: url(Bill.jfif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}

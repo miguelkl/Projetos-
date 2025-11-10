@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            var nome = navigator.appName ;
+            var versao = navigator.appVersion ;
+
+            document.write("Nome do navegador: " + nome) ;
+            document.write("<br>") ;
+            document.write("Versão do navegador: " + versao) ;
+
+            var tela = window.open('https://www.eniac.edu.br', 'blank', 'width=800, height=600') ;
+
+            setTimeout( ()=> tela.close() , 5000   ) ;
+
+            setInterval( () => document.write("oi turma<br>"), 2000 ) ;
+
+        </script>
+    </body>
+</html>

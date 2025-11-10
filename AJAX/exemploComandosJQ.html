@@ -1,0 +1,29 @@
+<!DOCTYPE >
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Comandos JQuery</title>
+    <!--Incluimos a biblioteca JQuery local-->
+    <script src="jquery-3.7.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("p").hide();
+            $("#mostrar").click(function(){
+                $("p").show();
+            });
+            $("#esconder").click(function(){
+                $("p").hide();
+            });
+        });
+    </script>
+</head>
+<body>
+    <!--Criamos os links usando html-->
+    <h2>Exemplo 01 - JQuery</h2>
+    <!--Criar os links usando "id"-->
+    <a href="#" id="mostrar">Mostrar (Show)</a><br>
+    <a href="#" id="esconder">Esconder (Hide)</a><br>
+    <p>Roger ferrer eo melhor jogador de tenis do mundo !!!</p>
+</body>
+
+</html>

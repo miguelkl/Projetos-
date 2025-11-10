@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang ="pt-br">
+    <head>
+        <title>Formulário</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <form name="form1" method="post" action="grava.jsp">
+            <label for="txtnome">Nome:</label>
+            <input type="text" name="txtnome" id="txtnome" maxlength="5">
+            
+            <br>
+            <label for="txtsenha">Senha:</label>
+            <input type="password" name="txtsenha" id="txtsenha">
+        
+            <br>
+            <label for="txtmensagem">Mensagem:</label><br>
+            <textarea name="txtmensagem" id="txtmensagem" cols="40" rows="6">Digite uma Mensagem</textarea>
+            
+            <br>
+            <label for="txtsexo">Sexo:</label>
+            <input type="radio" name="txtsexo" id="txtsexo" value="M">Masculino
+            <input type="radio" name="txtsexo" id="txtsexo" value="F">Feminino
+            
+            <br>
+            <label for="revista">Revista:</label>
+            
+            <input type="checkbox" name="revista" value="Veja">Veja
+            
+            <input type="checkbox" name="revista" value="Exame">Exame
+            
+            <input type="checkbox" name="revista" value="Info">Info
+
+            <br>
+            <label for="estado">Estado</label>
+            <select name="estado" id="estado">
+                <option value="SP">São paulo</option>
+                <option value="RJ">Rio de janeiro</option>
+                <option value="SC">Santa catarina</option>
+            </select>
+            <br>
+
+            <input type="submit" value="Gravar">
+            <input type="reset" value="Limpar">
+        </form>
+    </body>
+</html>

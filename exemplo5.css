@@ -1,0 +1,12 @@
+.titulo1 {
+    background-color: aquamarine;
+    border-left: 15px solid forestgreen;
+    padding-left: 10px;
+
+}
+
+.titulo2 {
+    background-color: #8508fa;
+    border-left: 15px solid rgb(74, 8, 100);
+    padding-left: 10px;
+}

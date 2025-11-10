@@ -1,0 +1,28 @@
+<h2> {{ titulo }} </h2>
+
+Digite a cor em inglês: 
+<input type="text" [(ngModel)]="cor"  >
+
+<br/><br/>
+
+<div [style.backgroundColor]="cor">
+    O Angular é um framework de código aberto usado para construir
+    aplicativos para web baseado em única página dinâmica (SPA).
+</div>
+
+<hr/>
+
+<h3>Calcular a Média</h3>
+
+Nota Portfólio:
+<input type="text" [(ngModel)]="notaPort"> <br />
+
+Nota Exercício:
+<input type="text" [(ngModel)]="notaExer" > <br />
+
+Nota Prova:
+<input type="text" [(ngModel)]="notaProva"> <br /> <br />
+
+Média:
+<input type="text" [(ngModel)]="media"> <br />
+<button (click)="calcular()" >Calcular</button>

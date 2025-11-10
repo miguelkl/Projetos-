@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Buscar CEP</title>
+    <!-- Iniciamos a programação usando JavaScript-->
+     <script type="text/JavaScript">
+        //Criamos uma função chamando buscarCep()
+        function buscarCep() {
+            //pegar um dado digitado no campo Cep no formulário
+            var cep = document.getElementById("cep").value ;
+            //link de serviço para buscar cep
+            var url = "https://viacep.com.br/ws/" + cep + "/json/";
+            //Objeto para criar uma comunicação do Ajax
+            var obj = new XMLHttpRequest();
+            //true - > operação assincrona
+            obj.open('GET',url,true);
+            obj.onreadystatechange = function () {
+                
+            }
+        }
+     </script>
+</head>
+<body>
+    <!--Criamos um formulário para mostrar cep buscado -->
+    <form name="form1">
+        CEP: <br>
+        <input type="text" id="cep"/> <br>
+        <!--Um botão para realizar a operação de busca: buscarCep()-->
+        <input type="button" value="Buscar" onclick = "buscarCep()" />
+         <!--Um botão para limpar-->
+        <input type="reset"  value="Limpar" /><br><br>
+        Rua : <br>
+        <input type = "text" id="rua" /><br>
+        Bairro : <br>
+        <input type = "text" id="bairro" /><br>
+        Cidade : <br>
+        <input type = "text" id="cidade" /><br>
+        Estado : <br>
+        <input type = "text" id="estado" /><br>
+    </form>
+</body>
+</html>

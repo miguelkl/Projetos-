@@ -1,0 +1,21 @@
+mat-toolbar{
+    background-color: purple;
+    color: white;
+}
+
+.mat-toolbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-container{
+    padding: 20px;
+}
+
+.ativo{
+    color: #ffbc11 !important ;
+}
+
+.toolbar-links{
+    margin-left: 50px;
+}

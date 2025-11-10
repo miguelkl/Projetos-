@@ -1,0 +1,21 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+
+<purchaseOrder orderDate = "2001-01-20">
+    <item partNo = "123" quantity = "1">
+        <Name>Jóse Campos</Name>
+        <price>10.20</price>
+        <ShipDate>31-07-2025</ShipDate>
+    </item>
+    <item partNo = "987" quantity = "1">
+        <Name>Juliana Sales</Name>
+        <price>100</price>
+        <ShipDate>24-08-2025</ShipDate>
+    </item>
+    <ShipAddress countryCode = "US">
+        <Name>road five</Name>
+        <Street>elmeer street</Street>
+        <City>mill hill</City>
+        <State>CA</State>
+        <Zip>30333</Zip>
+    </ShipAddress>
+</purchaseOrder>

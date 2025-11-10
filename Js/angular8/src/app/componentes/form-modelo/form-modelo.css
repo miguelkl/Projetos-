@@ -1,0 +1,13 @@
+span {
+    color: red;
+    opacity: 0.8;
+    margin-left: 10px;
+}
+
+input.ng-invalid.ng-touched {
+    border: 2px solid red;
+}
+
+input.ng-valid.ng-touched {
+    border: 2px solid green;
+}

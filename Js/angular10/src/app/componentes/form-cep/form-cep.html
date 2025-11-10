@@ -1,0 +1,30 @@
+<h1>Busca CEP</h1>
+
+
+<form>
+    <label for="cep">CEP:</label>
+    <input type="text" id="cep" name="cep" [(ngModel)]="cep" >
+
+
+    <button type="button" (click)="buscar()">Buscar</button>
+
+
+    <br> <br>
+    <label for="logradouro">Logradouro</label>
+    <input type="text" id="logradouro" name="logradouro" [ngModel]="endereco.logradouro" >
+
+
+    <br>
+    <label for="bairro">Bairro</label>
+    <input type="text" id="bairro" name="bairro" [ngModel]="endereco.bairro">
+
+
+    <br>
+    <label for="localidade">Cidade</label>
+    <input type="text" id="localidade" name="localidade" [ngModel]="endereco.localidade">
+
+
+
+
+</form>
+

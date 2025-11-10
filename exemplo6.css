@@ -1,0 +1,13 @@
+#esquerda {
+    background-color: burlywood;
+    width: 45%;
+    height: 300px;
+    float: left;
+}
+
+#direita {
+    background-color: darkgrey;
+    width: 45%;
+    height: 300px;
+    float: right;
+}
