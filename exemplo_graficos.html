@@ -1,0 +1,57 @@
+<!-- Fonte:  https://developers-dot-devsite-v2-prod.appspot.com/chart?hl=pt-br -->
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport"content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"rel="stylesheet"integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"crossorigin="anonymous">
+
+    <title>Gráfico</title>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data= google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Trabalhando',     16],
+          ['Eat',      1],
+          ['Commute',  16],
+          ['Watch TV', 1],
+          ['Sleep',    4]
+        ]);
+
+        var options= {
+          title:'Minhas atividades diárias',
+          pieHole:0.3,
+        };
+
+        var chart1=new google.visualization.PieChart(document.getElementById('meu_grafico1'));
+
+        chart1.draw(data, options);
+
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container-fluid">
+        <h1>Exemplo com Gráfico</h1>
+        <div>
+            <div id="meu_grafico1"style="width: 900px; height: 500px;"></div>
+            
+        </div>
+    </div>
+   
+
+ 
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"crossorigin="anonymous"></script>
+  </body>
+</html>
